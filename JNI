@@ -1,0 +1,11 @@
+JNI dev-steps
+
+Take an example of helloworld
+	1.create a class(Helloworld.java) that declares native methods
+	2.compile project by javac command (get Helloworld.class)
+	3.generate .h header file by "javah -jni" command (get Helloworld.h)
+	4.write C implementation of native method in .h (get Helloworld.c)
+	5.compile C code to dynamic libs(Windows:\*.dll, linux/unix:\*.so, mac os x:\*.jinlib)
+	6.copy dynamic libs to dir "java.library.path", then run java project.
+
+For example project refer to https://github.com/coder4869/JNI
