@@ -1,0 +1,16 @@
+
+Author: coder4869 
+
+Email: coder4869@gmail.com
+
+This is a Mac OS based example project for normal jni.
+This project provides following section:
+	1. C code of id number format checking
+	2. C Interface for Java calling
+	3. Java Interface for calling C code
+	4. shell (mac based) for create .dylib or .jnilib (lib used on mac)
+	5. shell (linux based) for create .so (lib used on linux)
+	6. shell (linux based) for create .so (lib used on android)
+	
+For more:
+	refer to https://github.com/coder4869/JNI
