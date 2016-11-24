@@ -9,5 +9,7 @@
  */
 JNIEXPORT jint JNICALL Java_com_jni_org_JNIInterface_isIDNumberLegal(JNIEnv *env, jobject obj, jstring idNumber) {
     char * idChar=(char*)(*env)->GetStringUTFChars(env, idNumber, NULL);
-    return isIDNumberLegal(idChar);
+    int reslut = isIDNumberLegal(idChar);
+    (*env)-> ReleaseStringUTFChars(env,idNumber, idChar);
+    return reslut;
 }
